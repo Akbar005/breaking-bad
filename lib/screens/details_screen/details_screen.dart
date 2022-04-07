@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../constants.dart';
-import '../../models/models.dart';
+import '../../models/bbad.dart';
 import '../../mq.dart';
 import '../loader_screen.dart';
 import 'package:http/http.dart' as http;

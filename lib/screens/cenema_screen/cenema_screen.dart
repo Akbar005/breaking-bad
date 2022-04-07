@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../constants.dart';
-import '../../models/models.dart';
+import '../../models/bbad.dart';
 import '../../mq.dart';
 import '../details_screen/details_screen.dart';
 import '../loader_screen.dart';

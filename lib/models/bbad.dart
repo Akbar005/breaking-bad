@@ -1,3 +1,10 @@
+import 'dart:convert';
+
+import 'package:json_annotation/json_annotation.dart';
+
+part 'bbad.g.dart';
+
+@JsonSerializable()
 class Bbad {
   int id;
   String name;
@@ -19,14 +26,7 @@ class Bbad {
     this.category,
   });
 
-  Bbad.fromJson(Map json) {
-    id = json["char_id"];
-    name = json["name"];
-    img = json["img"];
-    birthday = json["birthday"];
-    status = json["status"];
-    nickname = json["nickname"];
-    portrayed = json["portrayed"];
-    category = json["category"];
-  }
+  factory Bbad.fromJson(Map<String, dynamic> json) => _$BbadFromJson(json);
+
+  Map<String, dynamic> toJson() => _$BbadToJson(this);
 }
